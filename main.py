@@ -16,6 +16,7 @@
 
 # IMPORT PACKAGES AND MODULES
 # ///////////////////////////////////////////////////////////////
+from gui.functions.caseLawDesign import CaseLawDesigns
 from gui.uis.windows.main_window.functions_main_window import *
 import sys
 import os
@@ -66,9 +67,16 @@ class MainWindow(QMainWindow):
         self.hide_grips = True  # Show/Hide resize grips
         SetupMainWindow.setup_gui(self)
 
+        self.design_functions()
+
         # SHOW MAIN WINDOW
         # ///////////////////////////////////////////////////////////////
         self.show()
+
+    # Call Other Functions
+    # ///////////////////////////////////////////////////////////////
+    def design_functions(self):
+        CaseLawDesigns.design_home_page(self)
 
     # LEFT MENU BTN IS CLICKED
     # Run function when btn is clicked
@@ -90,6 +98,13 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
 
         # HOME BTN
+        if btn.objectName() == "btnCaseLawHome":
+            # Select Menu
+            self.ui.left_menu.select_only_one(btn.objectName())
+
+            # Load Page 1
+            MainFunctions.set_page(self, self.ui.load_pages.caseLawHome)
+
         if btn.objectName() == "btn_home":
             # Select Menu
             self.ui.left_menu.select_only_one(btn.objectName())
@@ -221,4 +236,4 @@ if __name__ == "__main__":
 
     # EXEC APP
     # ///////////////////////////////////////////////////////////////
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
