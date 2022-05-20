@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_pageskqEzAk.ui'
+## Form generated from reading UI file 'main_pagesoKjEbB.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.0
 ##
@@ -481,6 +481,165 @@ class Ui_MainPages(object):
         self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
 
         self.pages.addWidget(self.caseLawHome)
+        self.caseLawJudgements = QWidget()
+        self.caseLawJudgements.setObjectName(u"caseLawJudgements")
+        self.gridLayout_11 = QGridLayout(self.caseLawJudgements)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.scrollArea_2 = QScrollArea(self.caseLawJudgements)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setStyleSheet(u"QWidget{ background-color: transparent ;}\n"
+"QScrollArea{\n"
+"	background-color: transparent;\n"
+"	border:none;}\n"
+"\n"
+"QScrollBar:horizontal\n"
+"    {\n"
+"        height: 15px;\n"
+"        margin: 3px 15px 3px 15px;\n"
+"        border: 3px transparent #2A2929;\n"
+"        border-radius: 4px;\n"
+"        background-color: black;    /* #2A2929; */\n"
+"    }\n"
+"\n"
+"\n"
+"    QScrollBar::handle:horizontal\n"
+"    {\n"
+"        background-color: white;      /* #605F5F; */\n"
+"        min-width: 5px;\n"
+"        border-radius: 4px;\n"
+"    }\n"
+"\n"
+"    QScrollBar::add-line:horizontal\n"
+"    {\n"
+"        margin: 0px 3px 0px 3px;\n"
+"        border-image: url(:/qss_icons/rc/right_arrow_disabled.png);\n"
+"        width: 10px;\n"
+"        height: 10px;\n"
+"        subcontrol-position: right;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"    QScrollBar::sub-line:horizontal\n"
+"    {\n"
+"        margin: 0px 3px 0px 3px;\n"
+"        border-image: url(:/qss_icons/rc/left_arrow_disabled.png);\n"
+"       "
+                        " height: 10px;\n"
+"        width: 10px;\n"
+"        subcontrol-position: left;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"    QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on\n"
+"    {\n"
+"        border-image: url(:/qss_icons/rc/right_arrow.png);\n"
+"        height: 10px;\n"
+"        width: 10px;\n"
+"        subcontrol-position: right;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"\n"
+"    QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on\n"
+"    {\n"
+"        border-image: url(:/qss_icons/rc/left_arrow.png);\n"
+"        height: 10px;\n"
+"        width: 10px;\n"
+"        subcontrol-position: left;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"    QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal\n"
+"    {\n"
+"        background: none;\n"
+"    }\n"
+"\n"
+"\n"
+"    QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal\n"
+"    {\n"
+"        background: none;\n"
+"    }\n"
+"\n"
+"    QScrollBar:vertical"
+                        "\n"
+"    {\n"
+"        background-color:#EAEDED;\n"
+"        width: 15px;\n"
+"        margin: 15px 3px 15px 3px;\n"
+"        border: 1px transparent #2A2929;\n"
+"        border-radius: 4px;\n"
+"    }\n"
+"\n"
+"    QScrollBar::handle:vertical\n"
+"    {\n"
+"        background-color: #C7C7C7;         /* #605F5F; */\n"
+"        min-height: 9px;\n"
+"        border-radius: 4px;\n"
+"    }\n"
+"\n"
+"    QScrollBar::handle:vertical::hover{\n"
+"background-color: rgb(0, 95, 184);\n"
+" min-height: 25px;\n"
+"        border-radius: 4px;\n"
+"}\n"
+"\n"
+"    QScrollBar::sub-line:vertical\n"
+"    {\n"
+"        margin: 3px 0px 3px 0px;\n"
+"        border-image: url(:/qss_icons/rc/up_arrow_disabled.png);\n"
+"        height: 10px;\n"
+"        width: 10px;\n"
+"        subcontrol-position: top;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"    QScrollBar::add-line:vertical\n"
+"    {\n"
+"        margin: 3px 0px 3px 0px;\n"
+"        border-image: url(:/qss_icons/rc/down_arrow_disabled.png);\n"
+"        height: 10px;\n"
+"    "
+                        "    width: 10px;\n"
+"        subcontrol-position: bottom;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"    QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on\n"
+"    {\n"
+"        border-image: url(:/qss_icons/rc/up_arrow.png);\n"
+"        height: 10px;\n"
+"        width: 10px;\n"
+"        subcontrol-position: top;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"    QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on\n"
+"    {\n"
+"        border-image: url(:/qss_icons/rc/down_arrow.png);\n"
+"        height: 10px;\n"
+"        width: 10px;\n"
+"        subcontrol-position: bottom;\n"
+"        subcontrol-origin: margin;\n"
+"    }\n"
+"\n"
+"    QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical\n"
+"    {\n"
+"        background: none;\n"
+"    }\n"
+"\n"
+"    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical\n"
+"    {\n"
+"        background: none;\n"
+"    }")
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1116, 637))
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+
+        self.gridLayout_11.addWidget(self.scrollArea_2, 0, 0, 1, 1)
+
+        self.pages.addWidget(self.caseLawJudgements)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
         self.page_2_layout = QVBoxLayout(self.page_2)
@@ -571,7 +730,7 @@ class Ui_MainPages(object):
 
         self.retranslateUi(MainPages)
 
-        self.pages.setCurrentIndex(1)
+        self.pages.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainPages)
