@@ -16,6 +16,8 @@
 
 # IMPORT PACKAGES AND MODULES
 # ///////////////////////////////////////////////////////////////
+from gui.functions.caseLawApi import CaseLawApi
+from gui.functions.caseLawButtons import CaseLawButtons
 from gui.functions.caseLawDesign import CaseLawDesigns
 from gui.uis.windows.main_window.functions_main_window import *
 import sys
@@ -68,6 +70,8 @@ class MainWindow(QMainWindow):
         SetupMainWindow.setup_gui(self)
 
         self.design_functions()
+        self.button_functions()
+        self.api_functions()
 
         # SHOW MAIN WINDOW
         # ///////////////////////////////////////////////////////////////
@@ -77,6 +81,13 @@ class MainWindow(QMainWindow):
     # ///////////////////////////////////////////////////////////////
     def design_functions(self):
         CaseLawDesigns.design_home_page(self)
+        CaseLawDesigns.design_judgement_page(self)
+
+    def button_functions(self):
+        CaseLawButtons.home_button_clicks(self)
+
+    def api_functions(self):
+        CaseLawApi.thread_download_from_zimlii(self)
 
     # LEFT MENU BTN IS CLICKED
     # Run function when btn is clicked
